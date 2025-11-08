@@ -1,0 +1,5 @@
+{
+  "name": "AI Daily Briefing",
+  "description": "A smart dashboard that simulates connecting to your social media and email accounts to generate a personalized daily news briefing and a strategic plan for your day using the Gemini API.",
+  "requestFramePermissions": []
+}
