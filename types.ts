@@ -11,4 +11,19 @@ export interface DailyBriefing {
   calendar: CalendarEvent[];
 }
 
-export type ServiceKey = 'gmail' | 'linkedin' | 'facebook' | 'instagram' | 'techcrunch' | 'calendar';
+export type ServiceKey = 'gmail' | 'linkedin' | 'facebook' | 'instagram' | 'techcrunch' | 'calendar' | 'hinge' | 'tinder' | 'bumble' | 'googlenews' | 'applenews';
+
+export interface MediaContent {
+  service: ServiceKey;
+  type: 'image' | 'video' | 'audio';
+  url?: string;
+  status: 'loading' | 'done' | 'error';
+  prompt: string;
+  error?: string;
+}
+
+export interface CoachingSession {
+    audioB64: string;
+    transcript: string;
+    imageUrl: string;
+}
